@@ -14,3 +14,18 @@ options.forEach(option => {
         optionMenu.classList.remove("active");
     })
 })
+
+const pro = document.getElementById("pro");
+const dir = document.getElementById("dir");
+const form_pro = document.getElementById("form-pro");
+const form_dir = document.getElementById("form-dir");
+
+pro.addEventListener("click", () => {
+    form_dir.classList.remove("active");
+    form_pro.classList.add("active");
+})
+
+dir.addEventListener("click", () => {
+    form_pro.classList.remove("active");
+    form_dir.classList.add("active");
+})
