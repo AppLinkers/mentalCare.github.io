@@ -1,8 +1,9 @@
-nav button i {
+/* ============ NAVBAR ============ */
+#nav button i {
     color: var(--color-white);
 }
 
-nav h3{
+#nav h3{
     font-weight: 700;
     color: var(--color-white);
 }
