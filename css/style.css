@@ -11,6 +11,7 @@
     --color-purple: #A07FF1;
     --color-green: #1DBA84;
     --color-yellow: #EFB93A;
+    --color-red: #FC5230;
 
     --transition: all 400ms ease;
 
@@ -112,6 +113,14 @@ img {
     border-radius: 1rem;
     font-size: 1.1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-edit {
+    padding: 0.6rem 1.2rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray);
+    color: var(--color-dark);
+    font-weight: 500;
 }
 
 .btn-input {
