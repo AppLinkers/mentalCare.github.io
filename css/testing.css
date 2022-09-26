@@ -38,7 +38,7 @@
 }
 .check {
     width: 18%;
-    height: 6rem;
+    height: 5rem;
     margin-right: 0.5rem;
     float: left;
     display: flex;
@@ -132,4 +132,9 @@
 }
 .detail__inside.active {
     display: grid;
+}
+
+.card__button button {
+    width: 100%;
+    margin-top: 3rem;
 }

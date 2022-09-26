@@ -28,40 +28,43 @@
                 </div>
                 <h3>생활 스트레스</h3>
             </div>
-            <form action="#">
-                <div class="question">
-                    <h3>스트레스 강도는 어떤가요?</h3>
+            <form action= "my_result.html">
+                <div class="form-group">
+                    <div class="question">
+                        <h3>스트레스 강도는 어떤가요?</h3>
+                    </div>
+                    <div class="check__group">
+                        <div class="check__con">
+                            <div class="check">
+                                <input type="radio" name="check" value="worst" id="worst"/>
+                                <label class="check__radio" for="worst"></label>
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="check" value="high" id="high"/>
+                                <label class="check__radio" for="high"></label>
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="check" value="soso" id="soso"/>
+                                <label class="check__radio" for="soso"></label>
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="check" value="low" id="low"/>
+                                <label class="check__radio" for="low"></label>
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="check" value="none" id="none"/>
+                                <label class="check__radio" for="none"></label>
+                            </div>
+                        </div>
+                        <div class="check__text">
+                            <p>최상</p>
+                            <p>높음</p>
+                            <p>보통</p>
+                            <p>조금</p>
+                            <p>없음</p>
+                        </div>
                 </div>
-                <div class="check__group">
-                    <div class="check__con">
-                        <div class="check">
-                            <input type="radio" name="check" value="worst" id="worst"/>
-                            <label class="check__radio" for="worst"></label>
-                        </div>
-                        <div class="check">
-                            <input type="radio" name="check" value="high" id="high"/>
-                            <label class="check__radio" for="high"></label>
-                        </div>
-                        <div class="check">
-                            <input type="radio" name="check" value="soso" id="soso"/>
-                            <label class="check__radio" for="soso"></label>
-                        </div>
-                        <div class="check">
-                            <input type="radio" name="check" value="low" id="low"/>
-                            <label class="check__radio" for="low"></label>
-                        </div>
-                        <div class="check">
-                            <input type="radio" name="check" value="none" id="none"/>
-                            <label class="check__radio" for="none"></label>
-                        </div>
-                    </div>
-                    <div class="check__text">
-                        <p>최상</p>
-                        <p>높음</p>
-                        <p>보통</p>
-                        <p>조금</p>
-                        <p>없음</p>
-                    </div>
+                
                 </div>
                 <div class="question">
                     <h3>스트레스 요인으로는 어떤것이 있나요?</h3>
@@ -88,6 +91,10 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="card__button">
+                    <button class="btn" type="submit">검사완료 ( 1 / 11 )</button>
+                </div>
             </form>
         </div>
     </section>
