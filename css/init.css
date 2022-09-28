@@ -1,4 +1,8 @@
 /* ============ NAVBAR ============ */
+#nav {
+    position: fixed;
+    place-items: fixed;
+}
 #nav button i {
     color: var(--color-white);
 }
@@ -10,7 +14,7 @@
 
 /* ============ Content ============ */
 section#init {
-    height: 100vh;
+    height: calc(100vh);
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../image/football.jpg);
     background-size: cover;
 }
