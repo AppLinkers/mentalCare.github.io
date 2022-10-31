@@ -52,9 +52,18 @@
         <div class="line inside__large"></div>
     </section>
 
-    <!-- =========== RESULT ========== -->
-    <section id="result">
-        <div class="container result__container">
+    <div class="body container">
+
+        <!-- =========== RADAR ========== -->
+        <div class="chart__container">
+            <div class="radar__chart">
+                <canvas id="radar"></canvas>
+            </div>
+            <div class="line inside__large"></div>
+        </div>
+
+        <!-- =========== RESULT ========== -->
+        <div class="result__container">
             <!-- result-header -->
             <div class="result__header">
                 <div class="result__label">
@@ -136,7 +145,8 @@
                 </article>
             </div>
         </div>
-    </section>
+    </div>
+
 
     <!-- =========== JAVASCRIPT ========== -->
     <script src="../javascript/base.js"></script>
@@ -168,6 +178,58 @@
             document.getElementById('doughnut'),
             config
         );
+    </script>
+
+    <script>
+        const data_radar = {
+            labels: [
+                '경기력',
+                '기능자신감',
+                '부상',
+                '슬럼프',
+                '진로미래',
+                '관계',
+                '훈련',
+                '학업',
+                '주전경쟁',
+                '부담감',
+                '사생활규제'
+            ],
+            datasets: [{
+                label: '스트레스 강도',
+                data: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1],
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+            }]
+        }
+
+        const config_radar = {
+            type: 'radar',
+            data: data_radar,
+            options: {
+                element: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
+                scales: {
+                    r: {
+                        suggestedMin: 0,
+                        suggestedMax: 5
+                    }
+                }
+            }
+        }
+
+        const radar = new Chart(
+            document.getElementById('radar'),
+            config_radar
+        )
     </script>
 
     <script>

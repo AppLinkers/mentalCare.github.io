@@ -19,6 +19,14 @@
 }
 
 /* ===== QUESTION ====== */
+.form-group {
+    margin-top: 3rem;
+}
+
+.form-group:first-child {
+    margin-top: 0;
+}
+
 .question {
     display: flex;
     align-items: center;
@@ -28,10 +36,14 @@
 }
 
 .question h3 {
-    max-width: 70%;
+    max-width: 75%;
 }
 
 /* ===== CHECK ====== */
+.check__group {
+    margin-top: 1rem;
+}
+
 .check__con {
     display: flex;
     align-items: center;
@@ -65,6 +77,14 @@
     border: 2px solid var(--color-gray);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.check__result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gray);
+    margin-top: 2rem;
 }
 
 /* button size */
@@ -155,5 +175,5 @@
 
 .card__button button {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
