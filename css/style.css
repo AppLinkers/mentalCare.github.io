@@ -3,7 +3,7 @@
     --color-primary: #6951FF;
     --color-white: #fff;
     --color-light: #f4f4f4;
-    --color-black: #000f37;
+    --color-black: #000000;
     --color-dark: #575757;
     --color-gray: #9e9e9e;
     --color-lightgray: #c2c2c2;
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-    font-size: 5.6rem;
+    font-size: 5rem;
     line-height: 1;
     font-weight: 500;
     color: var(--color-black);
