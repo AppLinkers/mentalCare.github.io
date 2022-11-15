@@ -1,10 +1,12 @@
-const articles = document.querySelectorAll(".member-list");
+const authBtn = document.querySelector(".control-box button");
 
-for (var i = 0; i < articles.length; i++) {
-    const article = articles[i];
-    const input = article.querySelector("input");
-    const label = article.querySelector("label");
+authBtn.addEventListener("click", () => {
 
-    input.id = "switch" + i;
-    label.htmlFor = "switch" + i;
-}
+    if (authBtn.classList.contains("active")) {
+        authBtn.innerText = "권한 없음";
+    } else {
+        authBtn.innerText = "허가됨";
+    }
+    authBtn.classList.toggle("active");
+})
+
