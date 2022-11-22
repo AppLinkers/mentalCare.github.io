@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Care</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON SCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/player/player_setting.css">
+</head>
+
+<body>
+
+    <!-- =========== NAVBAR ========== -->
+    <nav id="nav">
+    </nav>
+
+    <!-- =========== SETTING ========== -->
+    <section id="setting">
+        <div class="container setting__container">
+
+            <form action="#">
+                <!-- header -->
+                <div class="setting-header">
+
+                    <div class="header-img">
+                        <img src="/image/son.png">
+                    </div>
+
+                    <div class="profile-name">
+                        <h3>손흥민 선수</h3>
+                    </div>
+
+                    <input id="selectImg" type="file" hidden>
+                    <div class="profile-edit" onclick="defaultBtnActive()">
+                        <p>프로필 사진 편집</p>
+                    </div>
+
+                </div>
+                <!-- body -->
+                <div class="setting-body">
+
+                    <div class="date-box">
+                        <label for="dday">다음 경기 날짜</label>
+                        <input id="dday" type="date">
+                    </div>
+                    <div class="edit-box">
+                        <label for="team">소속팀</label>
+                        <input id="team" class="btn btn-input" type="text" placeholder="팀 코드를 입력해주세요">
+                    </div>
+                    <div class="edit-box">
+                        <label for="position">포지션</label>
+                        <input id="position" class="btn btn-input" type="text" placeholder="포지션을 입력해주세요">
+                    </div>
+
+                </div>
+
+                <!-- button -->
+                <div class="setting-btn">
+                    <button class="btn" type="submit">저장하기</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- =========== JAVASCRIPT ========== -->
+    <script src="/javascript/base.js"></script>
+    <script src="/javascript/profile_setting.js"></script>
+</body>
+
+</html>
